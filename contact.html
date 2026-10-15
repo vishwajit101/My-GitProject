@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #fdf2f8, #f3e8ff);
+        color: #222;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #7c3aed;
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      label {
+        font-weight: bold;
+        color: #444;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        font-size: 1rem;
+      }
+
+      textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      button {
+        background: linear-gradient(135deg, #7c3aed, #a78bfa);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 14px 18px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.95;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <form>
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>

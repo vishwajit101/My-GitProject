@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Information</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        color: #222;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        color: white;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .header p {
+        margin: 10px 0 0;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: #f8f9fb;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 20px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        font-size: 1.2rem;
+      }
+
+      .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .info-list li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #34495e;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .skills span {
+        background: #dfeef8;
+        color: #1f3a5f;
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          margin: 20px;
+        }
+
+        .header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+      </div>
+
+      <div class="content">
+        <div class="grid">
+          <div class="card">
+            <h2>Personal Information</h2>
+            <ul class="info-list">
+              <li><span class="label">Full Name:</span> Your Name</li>
+              <li><span class="label">Email:</span> yourname@example.com</li>
+              <li><span class="label">Phone:</span> +1 234 567 890</li>
+              <li><span class="label">Address:</span> Your City, Country</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>About Me</h2>
+            <p>
+              I am a passionate and motivated professional with a strong interest in
+              technology, creativity, and continuous learning. I enjoy building useful
+              digital experiences and solving real-world problems through smart ideas and hard work.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Skills</h2>
+            <div class="skills">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Git</span>
+              <span>UI/UX</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Education</h2>
+            <ul class="info-list">
+              <li><span class="label">Degree:</span> Bachelor's / Master's Degree</li>
+              <li><span class="label">Field:</span> Computer Science / Business / Any Relevant Field</li>
+              <li><span class="label">Institution:</span> Your University Name</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Experience</h2>
+            <ul class="info-list">
+              <li><span class="label">Role:</span> Junior Developer / Designer / Manager</li>
+              <li><span class="label">Company:</span> Your Company Name</li>
+              <li><span class="label">Experience:</span> 1-3 years</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Hobbies</h2>
+            <div class="skills">
+              <span>Reading</span>
+              <span>Traveling</span>
+              <span>Technology</span>
+              <span>Photography</span>
+              <span>Sports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
